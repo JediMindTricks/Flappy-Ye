@@ -8,6 +8,17 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
+
+
+var GameAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "mp3")!)
+
+var GameAudioPlayer = AVAudioPlayer()
+
+// Creating variable to store audio file and to create an audio player.
+var BackgroundAudio = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "mp3")!), error: nil)
+
+
 
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
@@ -43,6 +54,8 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        // Play background Music
+        BackgroundAudio.play()
     }
 
     override func shouldAutorotate() -> Bool {

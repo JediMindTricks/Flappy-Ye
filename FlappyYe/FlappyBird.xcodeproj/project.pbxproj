@@ -16,8 +16,7 @@
 		43745217193D163800654986 /* FlappyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43745216193D163800654986 /* FlappyBirdTests.swift */; };
 		437A3DBA193D326A00909BA0 /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 437A3DB9193D326A00909BA0 /* bird.atlas */; };
 		DC1B53E51ACB574F0028C34B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1B53E41ACB574F0028C34B /* AVFoundation.framework */; };
-		DC481C5A1ACB9650005B0C20 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC481C581ACB9650005B0C20 /* bg.mp3 */; };
-		DC481C5B1ACB9650005B0C20 /* bg.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC481C591ACB9650005B0C20 /* bg.wav */; };
+		DFEBC2B81ACBC47F0070DA73 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFEBC2B71ACBC47E0070DA73 /* bg.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +43,7 @@
 		43745216193D163800654986 /* FlappyBirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdTests.swift; sourceTree = "<group>"; };
 		437A3DB9193D326A00909BA0 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
 		DC1B53E41ACB574F0028C34B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DC481C581ACB9650005B0C20 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg.mp3; path = ../../audio/bg.mp3; sourceTree = "<group>"; };
-		DC481C591ACB9650005B0C20 /* bg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bg.wav; path = ../../audio/bg.wav; sourceTree = "<group>"; };
+		DFEBC2B71ACBC47E0070DA73 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg.mp3; path = audio/bg.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +136,7 @@
 		DC481C5C1ACB965A005B0C20 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				DC481C581ACB9650005B0C20 /* bg.mp3 */,
-				DC481C591ACB9650005B0C20 /* bg.wav */,
+				DFEBC2B71ACBC47E0070DA73 /* bg.mp3 */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -224,10 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC481C5A1ACB9650005B0C20 /* bg.mp3 in Resources */,
+				DFEBC2B81ACBC47F0070DA73 /* bg.mp3 in Resources */,
 				4374520B193D163800654986 /* Images.xcassets in Resources */,
 				43745202193D163700654986 /* GameScene.sks in Resources */,
-				DC481C5B1ACB9650005B0C20 /* bg.wav in Resources */,
 				437A3DBA193D326A00909BA0 /* bird.atlas in Resources */,
 				43745209193D163800654986 /* Main.storyboard in Resources */,
 			);
