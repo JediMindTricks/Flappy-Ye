@@ -18,8 +18,6 @@ var GameAudioPlayer = AVAudioPlayer()
 // Creating variable to store audio file and to create an audio player.
 var BackgroundAudio = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "mp3")!), error: nil)
 
-
-
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
         
@@ -56,6 +54,8 @@ class GameViewController: UIViewController {
         }
         // Play background Music
         BackgroundAudio.play()
+        
+        BackgroundAudio.numberOfLoops = -1;
     }
 
     override func shouldAutorotate() -> Bool {
