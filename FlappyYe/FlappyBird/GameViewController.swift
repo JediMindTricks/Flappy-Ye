@@ -11,12 +11,12 @@ import SpriteKit
 import AVFoundation
 
 
-var GameAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "mp3")!)
+var GameAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "aiff")!)
 
 var GameAudioPlayer = AVAudioPlayer()
 
 // Creating variable to store audio file and to create an audio player.
-var BackgroundAudio = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "mp3")!), error: nil)
+var BackgroundAudio = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bg", ofType: "aiff")!), error: nil)
 
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
